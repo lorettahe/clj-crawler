@@ -1,0 +1,22 @@
+(defproject new-clj-crawler "0.1.0-SNAPSHOT"
+  :description "FIXME: write description"
+  :dependencies [[org.clojure/clojure "1.5.1"]
+                 [org.clojure/tools.cli "0.2.4"]
+                 [org.clojure/data.json "0.2.3"]
+                 [clj-http "0.7.7"]
+                 [clj-robots "0.6.0"]
+                 [commons-lang/commons-lang "2.6"]
+                 [com.cemerick/url "0.0.8"]
+                 [org.clojure/tools.logging "0.2.6"]
+                 [log4j "1.2.17"]
+                 [org.slf4j/slf4j-api "1.7.5"]
+                 [org.slf4j/slf4j-log4j12 "1.7.5"]
+                 [org.slf4j/jcl-over-slf4j "1.7.5"]
+                 [org.slf4j/jul-to-slf4j "1.7.5"]
+                 [org.apache.tika/tika-core "1.3"]
+                 [org.apache.tika/tika-parsers "1.3"]
+                 [com.ibm.icu/icu4j "52.1"]
+                 [digest "1.4.3"]]
+  :aot [new-clj-crawler.core]
+  :resource-paths ["etc"]
+  :main new-clj-crawler.core)
